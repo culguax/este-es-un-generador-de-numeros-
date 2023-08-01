@@ -1,9 +1,9 @@
-document.getElementById("keypress").addEventListener("keydown", function(event) {
-    if(event.key === "Enter"){
+document.addEventListener("keypress", function(event) {
+    // Verificamos si la tecla presionada es "Enter" (código 13)
+    if (event.key === "Enter") {
         generarNumeros();
     }
 });
-
 
 function generarNumeros() {
     let numero = parseInt(document.getElementById("numeroInput"). value);
@@ -43,3 +43,4 @@ function esPrimo(numero) {
     }
     return true;
 }
+
