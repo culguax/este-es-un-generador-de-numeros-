@@ -8,18 +8,23 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <main class="contenedor">
     <header>
-        <h1>Numbers Generator</h1>
+        <h1>Nunmers Gererator</h1>
         <h3>30 Days Of JavaScript DOM Day 3</h3>
-        <h4>Autor: Edgar Ramirez mis primeros pasos</h4>
+        <h4>Autor: Edgar Ramirez</h4>
     </header>
-    <main class="main-container">
+    
+    
+    <input class="input" id="numeroInput" type="number" placeholder="Generate more numbers" required>
+    <button onclick="generarNumeros()">Generate Numbers</button>
 
-        <input class="input" id="numeroInput" type="number" placeholder="Number Required" required>
-        <button onclick="generarNumeros()">Generate numbers</button> 
-
-        <div class="container" id="resultado"></div>
+    <div></div>
+    <p></p>
+    <div id="resultado" class="container"></div>
     </main>
+
+
     <script src="./index.js"></script>
 </body>
 </html>

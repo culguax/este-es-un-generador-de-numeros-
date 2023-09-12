@@ -11,6 +11,7 @@ function generarNumeros() {
     resultado.innerHTML = "";
 
     for( let i = 0; i <= numero; i++){
+        let color = "";
 
         if(i % 2 === 0){
             color = "green";
@@ -22,14 +23,11 @@ function generarNumeros() {
             color = "yellow";
         }
 
-
-
         let numeroSpan = document.createElement("span");
         numeroSpan.textContent = i;
         numeroSpan.style.backgroundColor = color;
         resultado.appendChild(numeroSpan);
     }
-    
 }
 
 
@@ -45,3 +43,4 @@ function esPrimo(numero) {
     }
     return true;
 }
+
